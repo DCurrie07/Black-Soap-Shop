@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart, faSpa } from '@fortawesome/free-solid-svg-icons';
+
+import Product from './Product';
 
 import Navbar from 'react-bootstrap/Navbar';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
@@ -8,30 +12,35 @@ import { Container } from 'react-bootstrap';
 import { NavDropdown, Nav } from 'react-bootstrap';
 
 
+
+
+
   
 export default class Navbars extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">African Black Soap</Navbar.Brand>
+            <Navbar.Brand href="/Home">
+                <FontAwesomeIcon icon ={faSpa} />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <Nav.Link href="./Account">Account</Nav.Link>
+                <Nav.Link href="./About">About</Nav.Link>
+                <NavDropdown title="Products" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="/BlackSoap">Black Soap</NavDropdown.Item>
+                    <NavDropdown.Item href="/SheaButter">Shea Butter</NavDropdown.Item>
+                    <NavDropdown.Item href="/EssentialOil">Essential Oil</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Coming Soon!</NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
                 <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                    Dank memes
+                <Nav.Link href="#deets">Sign In</Nav.Link>
+                <Nav.Link eventKey={2} href="./cart">
+                    <FontAwesomeIcon icon={faShoppingCart} />
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
