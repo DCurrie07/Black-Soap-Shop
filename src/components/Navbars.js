@@ -29,7 +29,7 @@ export default class Navbars extends Component {
                 <Nav className="me-auto">
                 <Nav.Link href="./Account">Account</Nav.Link>
                 <Nav.Link href="./About">About</Nav.Link>
-                <NavDropdown title="Products" id="collasible-nav-dropdown">
+                <NavDropdown href="./Products" title="Products" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/BlackSoap">Black Soap</NavDropdown.Item>
                     <NavDropdown.Item href="/SheaButter">Shea Butter</NavDropdown.Item>
                     <NavDropdown.Item href="/EssentialOil">Essential Oil</NavDropdown.Item>

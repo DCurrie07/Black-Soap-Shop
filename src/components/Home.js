@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import Carousel from 'react-bootstrap/Carousel';
+import { Card, ImgOverlay } from 'react-bootstrap';
+
+import pic1 from '../../images/african-people-3.jpg';
+import pic2 from '../../images/african-men.jpg';
+import pic3 from '../../images/giraffe.jpg';
+import pic4 from '../../images/black-soap-bar.jpg';
+import pic5 from '../../images/shea-butter.jpg';
+import pic6 from '../../images/essential-oils-3.jpg';
+
+
+
 
 export default class Home extends Component {
     render() {
         return (
             <div className="page-container">
                 <div className="top-half">
-                    <Carousel>
-                        <Carousel.Item interval={1000}>
-                            <img
+                    <Carousel style={{ 
+                        width: '100%' }}>
+                        <Carousel.Item interval={2500} >
+                            <img style={{ height: '500px' }}
                             className="d-block w-100"
-                            src="holder.js/800x400?text=First slide&bg=373940"
+                            src={pic1}
                             alt="First slide"
                             />
                             <Carousel.Caption>
@@ -19,33 +32,52 @@ export default class Home extends Component {
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item interval={500}>
-                            <img
+                        <Carousel.Item interval={2500}>
+                            <img style={{ height: '500px' }}
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                            src={pic2}
                             alt="Second slide"
                             />
+
                             <Carousel.Caption>
                             <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
-                            <img
+                        <Carousel.Item interval={2500}>
+                            <img style={{ height: '500px' }}
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                            src={pic3}
                             alt="Third slide"
                             />
+
                             <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3>100% Natural</h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
 
                 <div className="bottom-half">
+                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                        <Card.Img src={pic4} alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title style={{ fontSize: "4rem"}}>AFRICAN BLACK SOAP</Card.Title>
+                        </Card.ImgOverlay>
+                    </Card>
 
+                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                        <Card.Img src={pic5} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Card.Title style={{ fontSize: '5rem' }} >SHEA BUTTER</Card.Title>
+                        </Card.ImgOverlay>
+                    </Card>
+
+                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                        <Card.Img src={pic6} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Card.Title style={{ fontSize: '5rem' }} >ESSENTIAL OILS</Card.Title>
+                        </Card.ImgOverlay>
+                    </Card>
                 </div>
             </div>
         )
