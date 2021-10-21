@@ -1,0 +1,19 @@
+.about-section {
+    height: 400px;
+    background-color: #212529;
+    .card-img-top {
+        height: 320px;
+        padding: none;
+        .card-body p {
+            text-align: center;
+        }
+    }
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #212529;
+    height: 600px;
+}
