@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
 import { Card, ImgOverlay } from 'react-bootstrap';
 
-import pic1 from '../../images/african-people-3.jpg';
-import pic2 from '../../images/african-men.jpg';
-import pic3 from '../../images/giraffe.jpg';
+import pic1 from '../../images/black-soap-home.jpg';
+import pic2 from '../../images/benefits-two.jpg';
+import pic3 from '../../images/natural-home.jpg';
 import pic4 from '../../images/black-soap-bar.jpg';
 import pic5 from '../../images/shea-butter.jpg';
 import pic6 from '../../images/essential-oils-3.jpg';
@@ -28,8 +28,8 @@ export default class Home extends Component {
                             alt="First slide"
                             />
                             <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h3>Black Soap Shop</h3>
+                            <p>A unique skin care experience</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item interval={2500}>
@@ -40,7 +40,10 @@ export default class Home extends Component {
                             />
 
                             <Carousel.Caption>
-                            <h3>Second slide label</h3>
+                            <h3>Highlights</h3>
+                            <p>100% Vegan</p>
+                            <p>Great for acne and eczema</p>
+                            <p>Excellent for sensitive skin</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item interval={2500}>

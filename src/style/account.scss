@@ -1,0 +1,47 @@
+.page-container {
+    display: grid;
+    grid-gap: 40px;
+
+}
+
+.top-section {
+    height: 300px;
+    .card-img {
+        height: 300px;
+    }
+
+    .card-img-overlay {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 10rem;
+        color: #333
+    }
+}
+
+.account-input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 300px;
+}
+
+.form-floating {
+    padding: 5px;
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 60px;
+}

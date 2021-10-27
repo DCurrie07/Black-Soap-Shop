@@ -1,47 +1,73 @@
 import React, { Component } from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import blacksoap from '../../images/black-soap.jpg';
-import pic1 from '../../images/black-soap-bar.jpg';
+import blacksoapbar from '../../images/black-soap-shutter.jpg';
+import product1 from '../../images/black-soap-stack.jpg';
+import product2 from '../../images/liquid.jpg';
+import product3 from '../../images/essential.jpg'
 
 export default class BlackSoap extends Component {
     render() {
         return (
             <div className="black-soap-product">
-                <div className="about-section">
-                    <Card>
-                        <Card.Img variant="top" src={pic1} />
-                        <Card.Body>
-                        <Card.Text>
-                            AFRICAN BLACK SOAP
-                        </Card.Text>
-                        </Card.Body>
+                <div className="top-section">
+                    <Card style={{ height: '100%' }} className="account-info">
+                        <Card.Img src={blacksoapbar} alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>Black Soap</Card.Title>
+                        </Card.ImgOverlay>
                     </Card>
                 </div>
+                
                 <div className="product-list">
-                    <Card style={{ width: '30rem' }}>
-                        <Card.Img variant="top" src={blacksoap} />
-                        <Card.Body>
-                            <Card.Title>African Black Soap</Card.Title>
+                    <div className="card-container">
+                        <Card>
+                            <Card.Img variant="top" src={product1} />
+                            <Card.Body>
+                            <Card.Title>Raw Black Soap</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                n/a
                             </Card.Text>
-                            <Button variant="primary">Add to Cart</Button>
-                        </Card.Body>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Add to Cart</Button>
+                            </Card.Footer>
                         </Card>
+                    </div>
 
-                        <Card style={{ width: '30rem' }}>
-                        <Card.Img variant="top" src={blacksoap} />
-                        <Card.Body>
-                            <Card.Title>African Black Soap</Card.Title>
+                    <div className="card-container">
+                        <Card>
+                            <Card.Img variant="top" src={product2} />
+                            <Card.Body>
+                            <Card.Title>Liquid Black Soap</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                This card has supporting text below as a natural lead-in to additional
+                                content.{' '}
                             </Card.Text>
-                            <Button variant="primary">Add to Cart</Button>
-                        </Card.Body>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Add to Cart</Button>
+                            </Card.Footer>
                         </Card>
+                    </div>
+                    
+                    <div className="card-container">
+                        <Card>
+                            <Card.Img variant="top" src={product3} />
+                            <Card.Body>
+                            <Card.Title>Add Essential Oil?</Card.Title>
+                            <Card.Text>
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to
+                                show that equal height action.
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button>Add to Cart</Button>
+                            </Card.Footer>
+                        </Card>
+                    </div>          
                 </div>
             </div>
         )
