@@ -38,7 +38,7 @@ export default class Navbars extends Component {
                 </NavDropdown>
                 </Nav>
                 <Nav>
-                <Nav.Link href="#deets">Sign In</Nav.Link>
+                <Nav.Link href="/Auth">Sign In</Nav.Link>
                 <Nav.Link eventKey={2} href="./cart">
                     <FontAwesomeIcon icon={faShoppingCart} />
                 </Nav.Link>
