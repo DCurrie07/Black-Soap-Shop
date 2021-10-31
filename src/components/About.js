@@ -22,9 +22,8 @@ export default class About extends Component {
 
                 <div class="about-container">
                     <div class="content-wrapper">
-                    <img src={aboutpic2} alt="sniffing oils" />
-
-
+                        <img src={aboutpic2} alt="sniffing oils" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem corporis id voluptates veniam voluptas quod voluptate, esse, sunt debitis quidem deleniti officiis architecto? Necessitatibus, animi eveniet voluptatibus, temporibus saepe ab dolorum praesentium aperiam dolores similique odio tempore, officia eius dolor. Autem consequuntur, modi reprehenderit laudantium harum quod ut! Repudiandae.</p>
                     </div>
                 </div>
 
@@ -33,26 +32,25 @@ export default class About extends Component {
                 <div class="squares-wrapper">
                     <div class="squares">
                         <div class="square">
-                            <div class="img-wrapper">
+                            <div class="img-wrapper-one">
                                 <img src={aboutpic3} alt="Fries" />
                             </div>
 
                             <div class="square-text-wrapper">
-                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
 
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem corporis id voluptates veniam voluptas quod voluptate, esse, sunt debitis quidem deleniti officiis architecto? Necessitatibus, animi eveniet voluptatibus, temporibus saepe ab dolorum praesentium aperiam dolores similique odio tempore, officia eius dolor. Autem consequuntur, modi reprehenderit laudantium harum quod ut! Repudiandae.</p>
                             </div>
                         </div>
 
                         <div class="square">
-                            <div class="square-text-wrapper">
-                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem corporis id voluptates veniam voluptas quod voluptate, esse, sunt debitis quidem deleniti officiis architecto? Necessitatibus, animi eveniet voluptatibus, temporibus saepe ab dolorum praesentium aperiam dolores similique odio tempore, officia eius dolor. Autem consequuntur, modi reprehenderit laudantium harum quod ut! Repudiandae.</p>
+                            <div class="img-wrapper-two">
+                                <img src={benefits} alt="benefits" />
                             </div>
 
-                            <div class="img-wrapper">
-                                <img src={benefits} alt="benefits" />
+                            <div class="square-text-wrapper">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem corporis id voluptates veniam voluptas quod voluptate, esse, sunt debitis quidem deleniti officiis architecto? Necessitatibus, animi eveniet voluptatibus, temporibus saepe ab dolorum praesentium aperiam dolores similique odio tempore, officia eius dolor. Autem consequuntur, modi reprehenderit laudantium harum quod ut! Repudiandae.</p>
                             </div>
                         </div>
                     </div>

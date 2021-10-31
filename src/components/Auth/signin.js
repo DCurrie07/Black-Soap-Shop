@@ -25,7 +25,7 @@ export default class Signin extends Component {
     }
 
     handleSubmit(event) {
-        axios.post("http://black-soap-shop-api.herokuapp.com/api/saveClient",
+        axios.post(`https://black-soap-shop.herokuapp.com/admin/add`,
         {
             username: this.state.username,
             password: this.state.password
@@ -33,6 +33,8 @@ export default class Signin extends Component {
         { withCredentials: true }
         ).then(response => {
             console.log("response", response);
+        }).catch(error => {
+            console.log("Error", error);
         })
         event.preventDefault();
     }
