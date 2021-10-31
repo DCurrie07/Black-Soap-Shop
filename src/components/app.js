@@ -7,7 +7,7 @@ import Details from './Details';
 import Cart from './Cart';
 import Default from './Default';
 import Account from './Account';
-import Auth from './Auth';
+import Auth from './Auth/Auth';
 import About from './About';
 import BlackSoap from './BlackSoap';
 import SheaButter from './SheaButter';
@@ -26,7 +26,7 @@ export default class App extends Component {
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
           <Route path="/home" component={Home} />
-          <Route path="/auth" component={Auth} />
+          <Route path="/Auth" component={Auth} />
           <Route path="/cart" component={Cart} />
           <Route path="/account" component={Account} />
           <Route path="/about" component={About} />

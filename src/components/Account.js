@@ -7,7 +7,7 @@ import topPic from '../../images/account.jpg'
 export default class Account extends Component {
     render() {
         return (
-            <div className="page-container">
+            <div className="account-container">
                 <div className="top-section">
                 <Card style={{ height: '100%' }} className="account-info">
                     <Card.Img src={topPic} alt="Card image" />

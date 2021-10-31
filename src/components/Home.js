@@ -17,10 +17,10 @@ import pic6 from '../../images/essential-oils-3.jpg';
 export default class Home extends Component {
     render() {
         return (
-            <div className="page-container">
+            <div className="home-container">
                 <div className="top-half">
                     <Carousel style={{ 
-                        width: '100%' }}>
+                        width: `100%` }}>
                         <Carousel.Item interval={2500} >
                             <img style={{ height: '500px' }}
                             className="d-block w-100"
@@ -61,21 +61,21 @@ export default class Home extends Component {
                 </div>
 
                 <div className="bottom-half">
-                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                    <Card className="product-image">
                         <Card.Img src={pic4} alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title style={{ fontSize: "4rem"}}>AFRICAN BLACK SOAP</Card.Title>
                         </Card.ImgOverlay>
                     </Card>
 
-                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                    <Card className="product-image">
                         <Card.Img src={pic5} alt="Card image" />
                             <Card.ImgOverlay>
                                 <Card.Title style={{ fontSize: '5rem' }} >SHEA BUTTER</Card.Title>
                         </Card.ImgOverlay>
                     </Card>
 
-                    <Card style={{ width: '40%' }} className="bg-dark text-white">
+                    <Card className="product-image">
                         <Card.Img src={pic6} alt="Card image" />
                             <Card.ImgOverlay>
                                 <Card.Title style={{ fontSize: '5rem' }} >ESSENTIAL OILS</Card.Title>

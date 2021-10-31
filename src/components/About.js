@@ -20,7 +20,7 @@ export default class About extends Component {
                     </Card>
                 </div>
 
-                <div class="page-container">
+                <div class="about-container">
                     <div class="content-wrapper">
                     <img src={aboutpic2} alt="sniffing oils" />
 

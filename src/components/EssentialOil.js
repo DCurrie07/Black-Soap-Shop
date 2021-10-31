@@ -12,7 +12,7 @@ export default class EssentialOil extends Component {
         return (
             <div className="essential-oil-product">
                 <div className="top-section">
-                    <Card style={{ height: '100%' }} className="account-info">
+                    <Card className="essential-pic">
                         <Card.Img src={essential} alt="Shea Butter" />
                         <Card.ImgOverlay>
                             <Card.Title>ESSENTIAL OIL</Card.Title>

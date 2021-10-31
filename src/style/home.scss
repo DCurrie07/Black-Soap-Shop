@@ -19,10 +19,11 @@
     .bg-dark {
         border-radius: 70px;
     }
-    .card-img-overlay {
+    .product-image {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 40%;
 
     }
 
@@ -32,4 +33,10 @@
         color: #212529;
     }
         
+}
+
+@media (max-width: 500px) {
+    .bottom-half .product-image {
+        width: 80%;
+    }
 }
