@@ -25,10 +25,12 @@ export default class Signin extends Component {
     }
 
     handleSubmit(event) {
-        axios.post(`https://black-soap-shop.herokuapp.com/admin/add`,
+        axios.post(`sql5.freemysqlhosting.net/login`,
         {
-            username: this.state.username,
-            password: this.state.password
+            data: {
+                username: this.state.username,
+                password: this.state.password
+            },
         }, 
         { withCredentials: true }
         ).then(response => {
@@ -61,7 +63,7 @@ export default class Signin extends Component {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
+                        <Form.Control type="text" name="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
                     </Form.Group>
                     <Button className="btn" variant="primary" type="submit">
                         Submit
